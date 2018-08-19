@@ -1,9 +1,9 @@
 CC=gcc
 
-Stress_Testing:webbench.o 
+Stress_Testing:myTestTool.o 
 	gcc -Wall -o $@ $^
 
-webbench.o:webbench.c socket.c
+myTestTool.o:myTestTool.c socket.c
 
 .PHONY:clean
 clean:
